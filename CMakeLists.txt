@@ -152,18 +152,18 @@ if(TETWILD_WITH_ISPC)
 endif()
 
 # Building executable
-add_executable(TetWild src/main.cpp)
-target_link_libraries(TetWild
-		libTetWild
-		CLI11::CLI11
-		igl::cgal
-		warnings::all
-)
-target_include_directories(TetWild PRIVATE src)
-igl_copy_cgal_dll(TetWild)
+# add_executable(TetWild src/main.cpp)
+# target_link_libraries(TetWild
+# 		libTetWild
+# 		CLI11::CLI11
+# 		igl::cgal
+# 		warnings::all
+# )
+# target_include_directories(TetWild PRIVATE src)
+# igl_copy_cgal_dll(TetWild)
 
-# Install
-install(TARGETS TetWild RUNTIME DESTINATION bin)
+# # Install
+# install(TARGETS TetWild RUNTIME DESTINATION bin)
 
 ################################################################################
 # Folders for Visual Studio/XCode IDEs
